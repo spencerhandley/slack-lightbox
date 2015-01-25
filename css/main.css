@@ -1,0 +1,72 @@
+/*General*/
+
+.thumbnail {
+	margin-top: 30px;
+	border-radius: 3px;
+}
+
+#images {
+	margin-bottom: 30px;
+}
+
+/*Lightbox*/
+
+#lightbox-bg {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	opacity:0;
+	transition: opacity .5s; 
+}
+
+#lightbox-bg.fade {
+	opacity:.8;
+}
+
+#lightbox {
+	width: 400px;
+	position: fixed;
+	background-color: white;
+	top: 15%;
+	left: 50%;
+	margin-left: -205px;
+	padding: 5px;
+	border-radius: 5px;
+	transform: scale(0);	
+	transform-origin: 50% 50%;
+	transition: transform .5s; 
+}
+
+#lightbox.fade {
+	transform: scale(1);	
+}
+
+.lightbox-image {
+	width: 100%;
+	border-radius: 3px;
+}
+
+.lightbox-title {
+	font-size: 1em;
+}
+
+
+/*Buttons*/
+.next-btn {
+	position: absolute;
+	top: 375px;
+	cursor: pointer;
+	right: 20px;
+	color: white;
+}
+
+.prev-btn {
+	position: absolute;
+	top: 375px;
+	cursor: pointer;
+	left: 20px;
+	color: white;
+}
